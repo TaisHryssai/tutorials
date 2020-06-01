@@ -1,3 +1,6 @@
+### Access tutorial page through github pages
+[https://taishryssai.github.io/tutorials/](https://taishryssai.github.io/tutorials/)
+
 
 <img src="assets/img/deploy-laravel-aplicattion.png" alt="Deploy">
 
