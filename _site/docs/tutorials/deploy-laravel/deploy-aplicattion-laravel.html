@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.55.6" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/index.xml">
+
+<link rel="shortcut icon" href="/docsy-jekyll/assets/favicons/logo.ico" >
+<link rel="apple-touch-icon" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="96x196">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png"sizes="192x192">
+
+<title>Tutorials - Deploy a laravel 7.x application</title>
+<meta property="og:title" content="Deploy a laravel 7.x application" />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta property="og:site_name" content="http://localhost:4000" />
+
+<meta itemprop="name" content="Deploy a laravel 7.x application">
+<meta itemprop="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deploy a laravel 7.x application"/>
+<meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+"/>
+
+<link rel="stylesheet" href="/docsy-jekyll/assets/css/main.css">
+<link rel="stylesheet" href="/docsy-jekyll/assets/css/palette.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+  
+
+  <body class="td-section">
+    <header>
+        <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/docsy-jekyll/">
+            <span class="navbar-logo"></span><img src="/docsy-jekyll/assets/img/tsi.png" alt="" style="width: 18%">
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+			</li>
+		</ul>
+	</div>
+
+</nav>
+</header>
+
+<script>
+$(document).ready(function() {
+  var url = "https://api.github.com/search/repositories?q=vsoch/docsy-jekyll";
+  fetch(url, { 
+      headers: {"Accept":"application/vnd.github.preview"}
+  }).then(function(e) {
+    return e.json()
+  }).then(function(r) {
+     console.log(r.items[0])
+     stars = r.items[0]['stargazers_count']
+     forks = r.items[0]['forks_count']
+     $('#stars').text(stars + " Stars")
+     $('#forks').text(forks + " Forks")
+  });
+}); 
+</script>
+
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <div id="td-sidebar-menu" class="td-sidebar__inner">  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Tutorials</a>
+  </li><ul>
+    <li class="collapse show" id="tutorials">
+        <ul class="td-sidebar-nav__section pr-md-3">
+          <li class="td-sidebar-nav__section-title">
+            <a href="/docsy-jekyll/docs/tutorials/deploy-laravel/deploy-aplicattion-laravel" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Deploy a laravel aplicattion</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-tutorials-deploy-a-laravel-aplicattion-example-of-deploy-php" href="/docsy-jekyll/docs/tutorials/deploy-laravel/example-file-deploy">Example of deploy.php</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/docsy-jekyll/docs/extras" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Degugbar</a>
+          </li>
+          <ul><li class="collapse show" id=""></li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/docsy-jekyll/docs/extras" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Email</a>
+          </li>
+          <ul><li class="collapse show" id=""></li></ul>
+    </ul>
+  </nav>
+</div>
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+              <nav id="TableOfContents"><ul>
+              <li><ul id="TOC">
+                <!-- Links will be appended here-->
+              </ul></li>
+              </ul></nav>
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	      <ol class="breadcrumb spb-1">
+                <li class="breadcrumb-item active" aria-current="page">
+	          <a href="http://localhost:4000/docsy-jekyll/docs/tutorials/deploy-laravel/deploy-aplicattion-laravel">Deploy a laravel 7.x application</a>
+                </li>
+	      </ol>
+           </nav>
+           <div class="td-content">
+	      <h1 id="deploy-a-laravel-7x-application-using-deployer-and-docker">Deploy a laravel 7.x application using deployer and docker</h1>
+
+<h5 id="obs">OBS</h5>
+
+<p><strong>(s) Servidor</strong></p>
+
+<p><strong>(l) Local</strong></p>
+
+<ol>
+  <li>Connect to the server:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>ssh root@SERVER_IP
+</code></pre></div>    </div>
+  </li>
+  <li>The root user must not be used on the server, so it is necessary to create a new user:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo </span>adduser deployer
+</code></pre></div>    </div>
+  </li>
+  <li>After the new user is created, he must be added to sudoers in order for him to have sudo privileges:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> <span class="nb">sudo </span>deployer
+</code></pre></div>    </div>
+  </li>
+  <li>Set up an ssh key so that the user can access the server without having to enter the password:
+    <ul>
+      <li>To create the RSA key pair, he first asks where he wants to save the key (.ssh / id_rsa) and immediately asks to enter the password twice to open the key:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa
+</code></pre></div>        </div>
+      </li>
+      <li>Send the created key to the server:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>ssh-copy-id <span class="nt">-i</span> ~/.ssh/id_rsa.pub deployer@SERVER-IP
+</code></pre></div>        </div>
+      </li>
+      <li>Finally, to test that everything is correct:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>ssh deployer@SERVER-IP
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Install Docker and docker-compose on the server:
+    <ul>
+      <li>Docker:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span>  <span class="nv">$ </span>curl <span class="nt">-fsSL</span> https://get.docker.com <span class="nt">-o</span> get-docker.sh
+</code></pre></div>        </div>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span>  <span class="nv">$ </span><span class="nb">sudo </span>sh get-docker.sh
+</code></pre></div>        </div>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span>  <span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> docker deployer
+</code></pre></div>        </div>
+      </li>
+      <li>docker-compose:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span>  <span class="nv">$ </span><span class="nb">sudo </span>curl <span class="nt">-L</span> <span class="s2">"https://github.com/docker/compose/releases/download/1.25.5/docker-compose-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-s</span><span class="si">)</span><span class="s2">-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="si">)</span><span class="s2">"</span> <span class="nt">-o</span> /usr/local/bin/docker-compose
+</code></pre></div>        </div>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span>  <span class="nv">$ </span><span class="nb">sudo chmod</span> +x /usr/local/bin/docker-compose
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Install nginx on the server, a container for nginx will not be used; therefore, there is no need to create and configure a new nginx to define which application should be redirected:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>nginx <span class="nt">-y</span>
+</code></pre></div>    </div>
+  </li>
+  <li>It is necessary to add the user created to the www-data group to allow read and write access to /var/www:
+    <ul>
+      <li>Add user to www-data:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo </span>adduser <span class="nv">$USER</span> www-data
+</code></pre></div>        </div>
+      </li>
+      <li>Change the owner of the files, allowing user access:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo chown</span> <span class="nv">$USER</span>:www-data <span class="nt">-R</span> /www
+</code></pre></div>        </div>
+      </li>
+      <li>Change file permissions by providing read, write and execute permissions:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo chmod </span><span class="nv">u</span><span class="o">=</span>rwX,g<span class="o">=</span>srX,o<span class="o">=</span>rX <span class="nt">-R</span> /var/www
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Allow the user to run nginx with sudo and without a password:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span><span class="nb">sudo </span>visudo
+</code></pre></div>    </div>
+    <ul>
+      <li>Add these lines to the open file:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # Commands to run as sudo without password
+ deployer ALL=(ALL) NOPASSWD:/usr/sbin/nginx
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Create a branch for production:
+    <ul>
+      <li>Go to branch master:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>git ckeckout master
+</code></pre></div>        </div>
+      </li>
+      <li>Create a new branch:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>git ckeckout <span class="nt">-b</span> production 
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Install Deployer, the implementer must be installed inside the application container:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>docker-compose <span class="nb">exec </span>app composer require deployer/dist –dev
+</code></pre></div>    </div>
+  </li>
+  <li>After installing Deployer, generate the configuration file for the deployment:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>docker-compose <span class="nb">exec </span>app vendor/bin/dep init <span class="nt">-t</span> Laravel
+</code></pre></div>    </div>
+  </li>
+  <li>In an editor, open the deploy.php file, to configure it:
+    <ul>
+      <li>Example of <a href="example-file-deploy">deploy.php</a></li>
+    </ul>
+  </li>
+  <li>Allow access to the server via ssh through the container:
+    <ul>
+      <li>Create a folder named .ssh within the project and copy your private key:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span><span class="nb">cp</span> ~/.ssh/id_rsa .ssh/
+</code></pre></div>        </div>
+      </li>
+      <li>Ignore the .ssh folder in the project:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>git update-index <span class="nt">--assume-unchanged</span> .ssh/
+</code></pre></div>        </div>
+      </li>
+      <li>Added the .ssh folder in gitignore</li>
+    </ul>
+  </li>
+  <li>Allow the server to clone the project that is on github.com:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa
+</code></pre></div>    </div>
+    <ul>
+      <li>Copy the key and on github.com, in settings, Deploy keys and then add deploy key add the public key:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">cat</span> ~/.ssh/id_rsa.pub
+</code></pre></div>        </div>
+      </li>
+      <li>Test access to github
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span>ssh <span class="nt">-T</span> git@github.com
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>In the project folder, create the folders for the deployment:
+    <ul>
+      <li>In this folder, you will find the Dockerfile and docker-compose files
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> deploy/production
+<span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span><span class="nb">cd </span>deploy/production
+</code></pre></div>        </div>
+      </li>
+      <li>Dockerfile:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>wget https://gist.githubusercontent.com/dmarczal/a0800aae0111f152fd69024f2ab13d77/raw/6f3ab5ae3ae01729b30de029101686583212f67b/Dockerfile
+</code></pre></div>        </div>
+      </li>
+      <li>Open the Dockerfile file, and just under procps \ add rsync. Rsync is used to copy and synchronize files and directories remotely.
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instead of,  RUN ln -sf ${VENDOR_PATH} ${APP}/current/vendor
+change to, RUN ln -sf ${VENDOR_PATH} ${APP}/shared/vendor
+</code></pre></div>        </div>
+      </li>
+      <li>docker-compose:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>wget https://gist.githubusercontent.com/dmarczal/585343b16c62f7f061e8d6964639ec4d/raw/063c941f8e7a0be1c9b75e482a15c112c007c2db/docker-compose.yml
+</code></pre></div>        </div>
+      </li>
+      <li>Open the docker-compose.yml file, and change the lines:
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Instead of,  - ./current/php/local.ini:/usr/local/etc/php/conf.d/local.ini</span>
+<span class="s">change to,   - ./shared/php/server.ini:/usr/local/etc/php/conf.d/server.ini</span>
+</code></pre></div>        </div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Instead of,  - ./current/mysql/my.cnf:/etc/mysql/my.cnf</span>
+<span class="s">change to,   - ./shared/mysql/my.cnf:/etc/mysql/my.cnf</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Create a folder to store the php file:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> deploy/php
+<span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span><span class="nb">cd </span>deploy/php
+<span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>nano server.ini
+</code></pre></div>        </div>
+        <p><strong>Content:</strong></p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    upload_max_filesize=40M
+    post_max_size=40M
+    memory_limit=4G
+</code></pre></div>        </div>
+      </li>
+      <li>Create a folder to store the mysql file:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> deploy/mysql
+<span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span><span class="nb">cd </span>deploy/mysql
+<span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>nano my.cnf
+</code></pre></div>        </div>
+        <p><strong>Content:</strong></p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     [mysqld]
+     general_log = 1
+     general_log_file = /var/lib/mysql/general.log
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Add files created in the production branch, so that the server has access to these files when cloned:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>git add <span class="nb">.</span>
+<span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>git commit <span class="nt">-m</span> “commit deploy-production”
+<span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>git push origin production
+</code></pre></div>    </div>
+  </li>
+  <li>Prepare the deployment, the deploy: prepare command verifies that the releases, shared folders and .dep have been created on the server, if they do not exist, deploy: prepare will create them:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>docker-compose <span class="nb">exec </span>app php vendor/bin/dep deploy:prepare production <span class="nt">-vvv</span>
+</code></pre></div>    </div>
+    <p><strong>OBS:</strong>
+   deploy_path is the application path, this path is added to the deploy.php file;
+In the shared folder, shared files are stored in all versions;
+The releases folder contains the releases, which would be different versions of the application;
+In .dep, they are metadata used by Deployer.</p>
+  </li>
+  <li>The deploy: setup command is responsible for creating and starting the application containers:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>docker-compose <span class="nb">exec </span>app php vendor/bin/dep deploy:setup:docker production <span class="nt">-vvv</span>
+</code></pre></div>    </div>
+  </li>
+  <li>On the server, go to the /var/www/APP_NAME/shared folder and create an .env file:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span> <span class="nv">$ </span>nano .env
+</code></pre></div>    </div>
+    <p><strong>Content:</strong></p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>APP_NAME=SM-SEMEC
+APP_ENV=production
+APP_KEY=
+APP_DEBUG=false
+APP_URL=http://semec.tsi.pro.br
+
+DB_CONNECTION=mysql
+DB_HOST=db-semec
+DB_PORT=3306
+DB_DATABASE=name_database
+DB_USERNAME=user-database
+DB_PASSWORD=password-database  
+</code></pre></div>    </div>
+  </li>
+  <li>Generate application key:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span> <span class="nv">$ </span>docker-compose <span class="nb">exec </span>app php vendor/bin/dep deploy:artisan:key:generate production <span class="nt">-vvv</span>
+</code></pre></div>    </div>
+  </li>
+  <li>After everything is set up, just run the command to deploy the application to the server:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>l<span class="o">)</span><span class="nv">$ </span>docker-compose <span class="nb">exec </span>app php vendor/bin/dep deploy production <span class="nt">-vvv</span>
+</code></pre></div>    </div>
+  </li>
+  <li>On the server, create the configuration file, APP_NAME (e.g. sm-semec) in the /etc/nginx/sites-available folder:
+    <ul>
+      <li>Create file:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>vim /etc/nginx/sites-available/sm-semec
+</code></pre></div>        </div>
+        <p><strong>Content:</strong></p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>upstream app-semec {
+    server 0.0.0.0:9001;
+}
+server {
+    listen 80;
+    server_name dominio.com;
+    error_log  /var/www/sm-semec/shared/logs/nginx-error.log;
+    access_log /var/www/sm-semec/shared/logs/nginx-access.log;
+    root /var/www/sm-semec/current/public;
+      
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
+      
+    index index.html index.htm index.php;
+      
+    charset utf-8;
+      
+    location ~\.php$ {
+        try_files $uri = 404;
+       fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass app-semec;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+    }
+      
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+      
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+      
+    error_page 404 /index.php;
+      
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+      
+    client_max_body_size 5M;
+    client_body_buffer_size 16k;
+}
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Activate the site by adding a symbolic link to the file created on the activated sites:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo ln</span> <span class="nt">-sf</span> /etc/nginx/sites-available/sm-semec /etc/nginx/sites-enabled/sm-semec
+</code></pre></div>    </div>
+  </li>
+  <li>Check that everything is correct in the settings made and reload nginx:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>nginx <span class="nt">-t</span>
+</code></pre></div>    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>nginx <span class="nt">-s</span> reload
+</code></pre></div>    </div>
+  </li>
+  <li>Configure SSL (https), it is a type of digital security that allows encrypted communication between a website and a browser:
+Based on How To Secure Nginx with Let’s Encrypt, it provides an easy way to install and obtain free SSL certificates, thus allowing encrypted HTTPS on servers.
+    <ul>
+      <li>Install Certbot, with it you can generate certificates issued by Let’s Encrypt:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>add-apt-repository ppa:certbot/certbot
+</code></pre></div>        </div>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+</code></pre></div>        </div>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>python-certbot-nginx
+</code></pre></div>        </div>
+      </li>
+      <li>The Nginx plug-in will take care of reconfiguring Nginx and reloading the configuration whenever necessary, it does this by running certbot –nginx, and to specify the name for which the certificate is valid, use -d, when it is the first time it will ask you to add your email:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>certbot <span class="nt">--nginx</span> <span class="nt">-d</span> semec.tsi.pro.br
+</code></pre></div>        </div>
+      </li>
+      <li>The certbot adds a script that runs twice a day where it automatically renews any certificate, to test the renewal process just run:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span><span class="nb">sudo </span>certbot renew –dry-run
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>In the /var/www/APP_NAME/shared/.env file, change http to https:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>s<span class="o">)</span><span class="nv">$ </span>docker-compose <span class="nb">exec </span>app php vendor/bin/dep deploy:config:cache production <span class="nt">-vvv</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Access the application <a href="https://semec.tsi.pro.br">https://semec.tsi.pro.br:</a></li>
+</ol>
+
+<script>
+var headers = ["h1", "h2", "h3", "h4"]
+var colors = ["red", "orange", "green", "blue"]
+
+$.each(headers, function(i, header){
+    var color = colors[i];
+    $(header).each(function () {
+        var href=$(this).attr("id");
+        $(this).append('<a class="headerlink" style="color:' + color + '" href="#' + href + '" title="Permanent link">¶</a>')
+    });
+})
+</script>
+
+<script>
+$('h1').first().append('<div></div>')</script>
+
+	
+              
+           </div>
+          </main>
+        </div>
+      </div>
+      <footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+</div>
+<div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+<ul class="list-inline mb-0">  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="" aria-label="GitHub" data-original-title="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/utfpr-gp-tsi/sm-semec">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+</ul>
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+  <small class="text-white">© 2020 Dinosaur Avocado All Rights Reserved</small>
+  
+  <p class="mt-2"><a href="/about/">About Docsy</a></p>	
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="/docsy-jekyll/assets/js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.55.6" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/index.xml">
+
+<link rel="shortcut icon" href="/docsy-jekyll/assets/favicons/logo.ico" >
+<link rel="apple-touch-icon" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="96x196">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docsy-jekyll/assets/favicons/tsi.png"sizes="192x192">
+
+<title>Tutorials - Search</title>
+<meta property="og:title" content="Search" />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta property="og:site_name" content="http://localhost:4000" />
+
+<meta itemprop="name" content="Search">
+<meta itemprop="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Search"/>
+<meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+"/>
+
+<link rel="stylesheet" href="/docsy-jekyll/assets/css/main.css">
+<link rel="stylesheet" href="/docsy-jekyll/assets/css/palette.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+  
+
+  <body class="td-section">
+    <header>
+        <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/docsy-jekyll/">
+            <span class="navbar-logo"></span><img src="/docsy-jekyll/assets/img/tsi.png" alt="" style="width: 18%">
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+			</li>
+		</ul>
+	</div>
+
+</nav>
+</header>
+
+<script>
+$(document).ready(function() {
+  var url = "https://api.github.com/search/repositories?q=vsoch/docsy-jekyll";
+  fetch(url, { 
+      headers: {"Accept":"application/vnd.github.preview"}
+  }).then(function(e) {
+    return e.json()
+  }).then(function(r) {
+     console.log(r.items[0])
+     stars = r.items[0]['stargazers_count']
+     forks = r.items[0]['forks_count']
+     $('#stars').text(stars + " Stars")
+     $('#forks').text(forks + " Forks")
+  });
+}); 
+</script>
+
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <div id="td-sidebar-menu" class="td-sidebar__inner">  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Tutorials</a>
+  </li><ul>
+    <li class="collapse show" id="tutorials">
+        <ul class="td-sidebar-nav__section pr-md-3">
+          <li class="td-sidebar-nav__section-title">
+            <a href="/docsy-jekyll/docs/tutorials/deploy-laravel/deploy-aplicattion-laravel" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Deploy a laravel aplicattion</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-tutorials-deploy-a-laravel-aplicattion-example-of-deploy-php" href="/docsy-jekyll/docs/tutorials/deploy-laravel/example-file-deploy">Example of deploy.php</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/docsy-jekyll/docs/extras" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Degugbar</a>
+          </li>
+          <ul><li class="collapse show" id=""></li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/docsy-jekyll/docs/extras" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Email</a>
+          </li>
+          <ul><li class="collapse show" id=""></li></ul>
+    </ul>
+  </nav>
+</div>
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+              <nav id="TableOfContents"><ul>
+              <li><ul id="TOC">
+                <!-- Links will be appended here-->
+              </ul></li>
+              </ul></nav>
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	      <ol class="breadcrumb spb-1">
+                <li class="breadcrumb-item active" aria-current="page">
+	          <a href="http://localhost:4000/docsy-jekyll/search/">Search</a>
+                </li>
+	      </ol>
+           </nav>
+           <div class="td-content">
+	      <input class="form-control td-search-input" type="search" name="q" id="search-input" placeholder="&#xf002 Search this site…"  style="margin-top:5px" autofocus>
+<i style="color:white; margin-right:8px; margin-left:5px" class="fa fa-search"></i>
+
+<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
+
+<ul id="search-results"></ul>
+
+<script>
+	window.data = {
+		
+				
+					
+					
+					"docs-extras-index": {
+						"id": "docs-extras-index",
+						"title": "Email",
+						"categories": "",
+						"url": " /docs/extras/index",
+						"content": "Email\n\nExtras include other integrations that aren’t relevant to style or customization,\nbut can further enhance your documentation pages. Currently, we have support\nfor adding interactive quizzes.\n\nWould you like to see another question type, or another kind of extra? Please\n[open an issue])(https://github.com/vsoch/docsy-jekyll/issues/new)."
+					}
+					
+				
+		
+				
+					,
+					
+					"docs-tutorials-deploy-laravel-deploy-aplicattion-laravel": {
+						"id": "docs-tutorials-deploy-laravel-deploy-aplicattion-laravel",
+						"title": "Deploy a laravel 7.x application",
+						"categories": "",
+						"url": " /docs/tutorials/deploy-laravel/deploy-aplicattion-laravel",
+						"content": "Deploy a laravel 7.x application using deployer and docker\n\nOBS\n\n(s) Servidor\n\n(l) Local\n\n\n  Connect to the server:\n    (l) $ ssh root@SERVER_IP\n    \n  \n  The root user must not be used on the server, so it is necessary to create a new user:\n    (s) $ sudo adduser deployer\n    \n  \n  After the new user is created, he must be added to sudoers in order for him to have sudo privileges:\n    (s) $ sudo usermod -aG sudo deployer\n    \n  \n  Set up an ssh key so that the user can access the server without having to enter the password:\n    \n      To create the RSA key pair, he first asks where he wants to save the key (.ssh / id_rsa) and immediately asks to enter the password twice to open the key:\n        (l) $ ssh-keygen -t rsa\n        \n      \n      Send the created key to the server:\n        (l) $ ssh-copy-id -i ~/.ssh/id_rsa.pub deployer@SERVER-IP\n        \n      \n      Finally, to test that everything is correct:\n        (l) $ ssh deployer@SERVER-IP\n        \n      \n    \n  \n  Install Docker and docker-compose on the server:\n    \n      Docker:\n        (s)  $ curl -fsSL https://get.docker.com -o get-docker.sh\n        \n        (s)  $ sudo sh get-docker.sh\n        \n        (s)  $ sudo usermod -aG docker deployer\n        \n      \n      docker-compose:\n        (s)  $ sudo curl -L \"https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose\n        \n        (s)  $ sudo chmod +x /usr/local/bin/docker-compose\n        \n      \n    \n  \n  Install nginx on the server, a container for nginx will not be used; therefore, there is no need to create and configure a new nginx to define which application should be redirected:\n    (s) $ sudo apt-get update\n    \n    (s) $ sudo apt-get install nginx -y\n    \n  \n  It is necessary to add the user created to the www-data group to allow read and write access to /var/www:\n    \n      Add user to www-data:\n        (s) $ sudo adduser $USER www-data\n        \n      \n      Change the owner of the files, allowing user access:\n        (s) $ sudo chown $USER:www-data -R /www\n        \n      \n      Change file permissions by providing read, write and execute permissions:\n        (s) $ sudo chmod u=rwX,g=srX,o=rX -R /var/www\n        \n      \n    \n  \n  Allow the user to run nginx with sudo and without a password:\n    (s) $ sudo visudo\n    \n    \n      Add these lines to the open file:\n         # Commands to run as sudo without password\n deployer ALL=(ALL) NOPASSWD:/usr/sbin/nginx\n        \n      \n    \n  \n  Create a branch for production:\n    \n      Go to branch master:\n        (l) $ git ckeckout master\n        \n      \n      Create a new branch:\n        (l) $ git ckeckout -b production \n        \n      \n    \n  \n  Install Deployer, the implementer must be installed inside the application container:\n    (l) $ docker-compose exec app composer require deployer/dist –dev\n    \n  \n  After installing Deployer, generate the configuration file for the deployment:\n    (l) $ docker-compose exec app vendor/bin/dep init -t Laravel\n    \n  \n  In an editor, open the deploy.php file, to configure it:\n    \n      Example of deploy.php\n    \n  \n  Allow access to the server via ssh through the container:\n    \n      Create a folder named .ssh within the project and copy your private key:\n        (l)$ cp ~/.ssh/id_rsa .ssh/\n        \n      \n      Ignore the .ssh folder in the project:\n        (l)$ git update-index --assume-unchanged .ssh/\n        \n      \n      Added the .ssh folder in gitignore\n    \n  \n  Allow the server to clone the project that is on github.com:\n    (s)$ ssh-keygen -t rsa\n    \n    \n      Copy the key and on github.com, in settings, Deploy keys and then add deploy key add the public key:\n        (s)$ cat ~/.ssh/id_rsa.pub\n        \n      \n      Test access to github\n        (s)$ ssh -T git@github.com\n        \n      \n    \n  \n  In the project folder, create the folders for the deployment:\n    \n      In this folder, you will find the Dockerfile and docker-compose files\n        (l)$ mkdir -p deploy/production\n(l)$ cd deploy/production\n        \n      \n      Dockerfile:\n        (l)$ wget https://gist.githubusercontent.com/dmarczal/a0800aae0111f152fd69024f2ab13d77/raw/6f3ab5ae3ae01729b30de029101686583212f67b/Dockerfile\n        \n      \n      Open the Dockerfile file, and just under procps \\ add rsync. Rsync is used to copy and synchronize files and directories remotely.\n        Instead of,  RUN ln -sf ${VENDOR_PATH} ${APP}/current/vendor\nchange to, RUN ln -sf ${VENDOR_PATH} ${APP}/shared/vendor\n        \n      \n      docker-compose:\n        (l)$ wget https://gist.githubusercontent.com/dmarczal/585343b16c62f7f061e8d6964639ec4d/raw/063c941f8e7a0be1c9b75e482a15c112c007c2db/docker-compose.yml\n        \n      \n      Open the docker-compose.yml file, and change the lines:\n        Instead of,  - ./current/php/local.ini:/usr/local/etc/php/conf.d/local.ini\nchange to,   - ./shared/php/server.ini:/usr/local/etc/php/conf.d/server.ini\n        \n        Instead of,  - ./current/mysql/my.cnf:/etc/mysql/my.cnf\nchange to,   - ./shared/mysql/my.cnf:/etc/mysql/my.cnf\n        \n      \n      Create a folder to store the php file:\n        (l)$ mkdir -p deploy/php\n(l)$ cd deploy/php\n(l)$ nano server.ini\n        \n        Content:\n            upload_max_filesize=40M\n    post_max_size=40M\n    memory_limit=4G\n        \n      \n      Create a folder to store the mysql file:\n        (l)$ mkdir -p deploy/mysql\n(l)$ cd deploy/mysql\n(l)$ nano my.cnf\n        \n        Content:\n             [mysqld]\n     general_log = 1\n     general_log_file = /var/lib/mysql/general.log\n        \n      \n    \n  \n  Add files created in the production branch, so that the server has access to these files when cloned:\n    (l)$ git add .\n(l)$ git commit -m “commit deploy-production”\n(l)$ git push origin production\n    \n  \n  Prepare the deployment, the deploy: prepare command verifies that the releases, shared folders and .dep have been created on the server, if they do not exist, deploy: prepare will create them:\n    (l)$ docker-compose exec app php vendor/bin/dep deploy:prepare production -vvv\n    \n    OBS:\n   deploy_path is the application path, this path is added to the deploy.php file;\nIn the shared folder, shared files are stored in all versions;\nThe releases folder contains the releases, which would be different versions of the application;\nIn .dep, they are metadata used by Deployer.\n  \n  The deploy: setup command is responsible for creating and starting the application containers:\n    (l)$ docker-compose exec app php vendor/bin/dep deploy:setup:docker production -vvv\n    \n  \n  On the server, go to the /var/www/APP_NAME/shared folder and create an .env file:\n    (s) $ nano .env\n    \n    Content:\n    APP_NAME=SM-SEMEC\nAPP_ENV=production\nAPP_KEY=\nAPP_DEBUG=false\nAPP_URL=http://semec.tsi.pro.br\n\nDB_CONNECTION=mysql\nDB_HOST=db-semec\nDB_PORT=3306\nDB_DATABASE=name_database\nDB_USERNAME=user-database\nDB_PASSWORD=password-database  \n    \n  \n  Generate application key:\n    (l) $ docker-compose exec app php vendor/bin/dep deploy:artisan:key:generate production -vvv\n    \n  \n  After everything is set up, just run the command to deploy the application to the server:\n    (l)$ docker-compose exec app php vendor/bin/dep deploy production -vvv\n    \n  \n  On the server, create the configuration file, APP_NAME (e.g. sm-semec) in the /etc/nginx/sites-available folder:\n    \n      Create file:\n        (s)$ sudo vim /etc/nginx/sites-available/sm-semec\n        \n        Content:\n        upstream app-semec {\n    server 0.0.0.0:9001;\n}\nserver {\n    listen 80;\n    server_name dominio.com;\n    error_log  /var/www/sm-semec/shared/logs/nginx-error.log;\n    access_log /var/www/sm-semec/shared/logs/nginx-access.log;\n    root /var/www/sm-semec/current/public;\n      \n    add_header X-Frame-Options \"SAMEORIGIN\";\n    add_header X-XSS-Protection \"1; mode=block\";\n    add_header X-Content-Type-Options \"nosniff\";\n      \n    index index.html index.htm index.php;\n      \n    charset utf-8;\n      \n    location ~\\.php$ {\n        try_files $uri = 404;\n       fastcgi_split_path_info ^(.+\\.php)(/.+)$;\n        fastcgi_pass app-semec;\n        fastcgi_index index.php;\n        include fastcgi_params;\n        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;\n        fastcgi_param PATH_INFO $fastcgi_path_info;\n    }\n      \n    location / {\n        try_files $uri $uri/ /index.php?$query_string;\n    }\n      \n    location = /favicon.ico { access_log off; log_not_found off; }\n    location = /robots.txt  { access_log off; log_not_found off; }\n      \n    error_page 404 /index.php;\n      \n    location ~ /\\.(?!well-known).* {\n        deny all;\n    }\n      \n    client_max_body_size 5M;\n    client_body_buffer_size 16k;\n}\n        \n      \n    \n  \n  Activate the site by adding a symbolic link to the file created on the activated sites:\n    (s)$ sudo ln -sf /etc/nginx/sites-available/sm-semec /etc/nginx/sites-enabled/sm-semec\n    \n  \n  Check that everything is correct in the settings made and reload nginx:\n    (s)$ sudo nginx -t\n    \n    (s)$ sudo nginx -s reload\n    \n  \n  Configure SSL (https), it is a type of digital security that allows encrypted communication between a website and a browser:\nBased on How To Secure Nginx with Let’s Encrypt, it provides an easy way to install and obtain free SSL certificates, thus allowing encrypted HTTPS on servers.\n    \n      Install Certbot, with it you can generate certificates issued by Let’s Encrypt:\n        (s)$ sudo add-apt-repository ppa:certbot/certbot\n        \n        (s)$ sudo apt-get update\n        \n        (s)$ sudo apt-get install python-certbot-nginx\n        \n      \n      The Nginx plug-in will take care of reconfiguring Nginx and reloading the configuration whenever necessary, it does this by running certbot –nginx, and to specify the name for which the certificate is valid, use -d, when it is the first time it will ask you to add your email:\n        (s)$ sudo certbot --nginx -d semec.tsi.pro.br\n        \n      \n      The certbot adds a script that runs twice a day where it automatically renews any certificate, to test the renewal process just run:\n        (s)$ sudo certbot renew –dry-run\n        \n      \n    \n  \n  In the /var/www/APP_NAME/shared/.env file, change http to https:\n    (s)$ docker-compose exec app php vendor/bin/dep deploy:config:cache production -vvv\n    \n  \n  Access the application https://semec.tsi.pro.br:"
+					}
+					
+				
+		
+				
+					,
+					
+					"docs-tutorials-deploy-laravel-example-file-deploy": {
+						"id": "docs-tutorials-deploy-laravel-example-file-deploy",
+						"title": "Example of deploy.php",
+						"categories": "",
+						"url": " /docs/tutorials/deploy-laravel/example-file-deploy",
+						"content": "In this example of deploying, commands were used for a laravel app using docker.\n\n\n  Add the application name:\n    set('application', 'sm-semec');\n    \n  \n  Add application repository found on github:\n    set('repository', 'git@github.com:TaisHryssai/sm-semec.git');\n    \n  \n  Allocate TTY to the git clone command, this allows you to enter a password for keys:\n    set('git_tty', true);\n    \n    \n      OBS: TTY é um terminal no qual está conectado, quando ativado ele mostrará o terminal do git para obter uma senha.\n    \n  \n  Define how many versions you want to keep the application:\n    set('keep_releases', 3);\n    \n  \n  Set the process execution timeout:\n    set('default_timeout', 600);\n    \n  \n  Files that can be shared with all versions of the project:\n    add('shared_files', ['.env']);\n    \n  \n  Creates a symbolic link, where it is shared with the other versions of the project:\n    add('shared_dirs', ['logs', 'public/uploads', 'vendor']);\n    \n  \n  You need to specify a few things like:\n       host('production')\n    \t-&gt;hostname('161.35.122.229')\n    \t-&gt;user('deployer')\n    \t-&gt;port(22)\n    \t-&gt;identityFile('/var/www/.ssh/id_rsa')\n    \t-&gt;stage('production')\n        -&gt;set('deploy_path', '/var/www/')\n        -&gt;set('branch','production'); \n    \n    Where\n    \n      You must define a host to deploy:\nhost('production')\n      Add the IP server that will be used:\n→hostname('161.35.122.229')\n      User responsible for the deployment (must never be root):\n→user('deployer')\n      Port you are using:\n→port(22)\n      File must contain information about domains and how to connect:\n→identityFile('/var/www/.ssh/id_rsa')\n      Host stage:\n→stage('production')\n      Path where the application is located (leave application saved locally in / var / www):\n-&gt;set('deploy_path', '/var/www/')\n      Branch production used in the deploy:\n→set('branch','production');\n    \n  \n  Upload the directories by sending to the server:\n        task('deploy:cp-docker-files', function () {\n        upload('deploy/production/', \"\");\n        upload('deploy/php/', \"/shared/php/\");\n        upload('deploy/mysql/', \"/shared/mysql/\");\n    })→onStage('production');\n    \n    OBS Stage being used to deploy: →onStage('production');\n  \n  Commands related to containers:\n       task('deploy:build-containers', function () {\n      run('cd  &amp;&amp; docker-compose stop app-semec');\n      run('cd  &amp;&amp; docker-compose build --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) app-semec');\n   \t});\n    \n    Where:\n    \n      Stop the containers from running without removal:\nrun('cd  &amp;&amp; docker-compose stop app-semec');\n      Create the application container:\nrun('cd  &amp;&amp; docker-compose build --build-arg USER_ID=$(id -u) --build-arg \nGROUP_ID=$(id -g) app-semec');\n});\n    \n  \n  Issue a single command to start all containers, create volumes, configure and connect as networks\n    task('deploy:up-containers', function () { run('cd  &amp;&amp; docker-compose up -d'); });\n    \n  \n  Displays the containers:\n    task('deploy:containers-ps', function () { run('cd  &amp;&amp; docker-compose ps'); });\n    \n  \n  Command to perform docker-related tasks:\n    task('deploy:setup:docker', [\n       'deploy:cp-docker-files',\n       'deploy:build-containers',\n       'deploy:up-containers',\n       'deploy:containers-ps'\n   ]);\n    \n  \n  To install all packages and libraries, where optimize-autoloader speeds up automatic loading in the application:\n     task('deploy:composer:install', function () {\n   run('cd  &amp;&amp; docker-compose exec -T -w  app-semec composer install –   no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --no-suggest --optimize-autoloader');\n   });\n    \n  \n  Generate a key for the project:\n     task('deploy:artisan:key:generate', function () {\n   run('cd  &amp;&amp; docker-compose exec -T -w  app-semec php artisan key:generate');\n   });\n    \n  \n  Cache these settings in a file, which will increase the application loading speed:\n     task('deploy:config:cache', function () {\n   run('cd  &amp;&amp; docker-compose exec -T -w  app-semec php artisan config:cache');\n   });\n    \n  \n  Perform the migrations of the database tables:\n     task('deploy:migrate', function () {\nrun('cd  &amp;&amp; docker-compose exec -T -w  app-semec php artisan migrate –\tforce');\n});\n    \n  \n  Run the seeds:\n     task('deploy:seed', function () {\n   run('cd  &amp;&amp; docker-compose exec -T -w  app-semec php artisan db:seed –force');\n   });\n    \n  \n  Install the packages and dependencies with npm install, then load the application’s sass files:\n     task('deploy:assets', function () {\nrun('cd  &amp;&amp; docker-compose exec -T -w  app-semec \tnpm install'); \nrun('cd  &amp;&amp; docker-compose exec -T -w  app-semec \tnpm run production');\n});\n    \n  \n  Run the command to clear the routes and cache from the application view:\n     task('deploy:cache', function () {\n run('cd  &amp;&amp; docker-compose exec -T -w  app-semec \tphp artisan route:cache');\n run('cd  &amp;&amp; docker-compose exec -T -w  app-semec \tphp artisan view:cache');\n});\n    \n  \n  Stops the user process, causing the user to log off:\n     task('deploy:reload:php', function () {\n       run('cd  &amp;&amp; docker-compose exec -T app-semec kill -USR2 1');\n});\n    \n  \n  Reload nginx settings after modification:\n     task('deploy:reload:nginx', function () {\n      run('sudo nginx -s reload');\n  });task('deploy:reload:nginx', function () {\n      run('sudo nginx -s reload');\n  });\n    \n  \n  After completing the custom tasks, add them to the deploy task:\n     task('deploy', [\n       'deploy:lock',\n       'deploy:release',\n       'deploy:update_code',\n       'deploy:shared',\n       'deploy:clear_paths',\n       'deploy:composer:install',\n       'deploy:config:cache',\n       'deploy:migrate',\n       'deploy:seed',\n       'deploy:assets',\n       'deploy:cache',\n       'deploy:reload:php',\n       'deploy:reload:nginx',\n       'deploy:symlink',\n       'deploy:unlock',\n       'cleanup',\n       'success'\n   ]);\n    \n  \n  Delete release files like deploy.log that is on the server:\n    after('deploy:failed', 'deploy:unlock');"
+					}
+					
+				
+		
+		
+				
+					,
+					
+					"2019-hello-world": {
+						"id": "2019-hello-world",
+						"title": "Two Thousand Nineteen",
+						"categories": "jekyll, update",
+						"url": " /2019/hello-world/",
+						"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					}
+					
+				
+		
+				
+					,
+					
+					"2019-welcome": {
+						"id": "2019-welcome",
+						"title": "Welcome to MkDocs Jekyll",
+						"categories": "jekyll, update",
+						"url": " /2019/welcome/",
+						"content": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.\n\n\n\nTo add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.\n\nJekyll also offers powerful support for code snippets:\n\ndef print_hi(name)\n  puts \"Hi, #{name}\"\nend\nprint_hi('Tom')\n#=&gt; prints 'Hi, Tom' to STDOUT.\n\nCheck out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk."
+					}
+					
+				
+		
+		
+				
+					,
+					
+					"about": {
+						"id": "about",
+						"title": "About",
+						"categories": "",
+						"url": " /about/",
+						"content": "About\n\nThis is a starter template for a Docsy jekyll theme, based\non the Beautiful Docsy that renders with Hugo. This version is intended for\nnative deployment on GitHub pages. See the respository for more details.\n\nSupport\n\nIf you need help, please don’t hesitate to open an issue."
+					}
+					
+				
+		
+				
+					,
+					
+					"archive": {
+						"id": "archive",
+						"title": "Articles",
+						"categories": "",
+						"url": " /archive/",
+						"content": "News Archive\n\n2019\n\n\n  Jun 28, 2019: Two Thousand Nineteen\n  \n\n\n\n  Jun 28, 2019: Welcome to MkDocs Jekyll"
+					}
+					
+				
+		
+				
+					,
+					
+					"docs": {
+						"id": "docs",
+						"title": "Documentation",
+						"categories": "",
+						"url": " /docs/",
+						"content": "Documentation\n\nWelcome to the Docsy Jekyll Documentation pages! Here you can quickly jump to a \nparticular page.\n\n\n    \n            \n    \n    Email\n    Extras, including quizzes.\n            \n    \n    Deploy a laravel 7.x application\n    \n            \n    \n    Example of deploy.php"
+					}
+					
+				
+		
+				
+					,
+					
+					"feed-xml": {
+						"id": "feed-xml",
+						"title": "",
+						"categories": "",
+						"url": " /feed.xml",
+						"content": "Docsy Jekyll\n    Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.\n\n    http://localhost:4000/docsy-jekyll/\n    \n    Mon, 01 Jun 2020 15:40:45 -0300\n    Mon, 01 Jun 2020 15:40:45 -0300\n    Jekyll v3.8.7\n    \n      \n        Two Thousand Nineteen\n        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;\n\n        Fri, 28 Jun 2019 15:52:21 -0300\n        http://localhost:4000/docsy-jekyll/2019/hello-world/\n        http://localhost:4000/docsy-jekyll/2019/hello-world/\n        \n        \n        jekyll\n        \n        update\n        \n      \n    \n      \n        Welcome to MkDocs Jekyll\n        &lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;\n\n&lt;!--more--&gt;\n\n&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;\n\n&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;\n\n&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;\n  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;\n&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;\n&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;\n&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;\n\n&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;\n\n\n        Fri, 28 Jun 2019 07:52:21 -0300\n        http://localhost:4000/docsy-jekyll/2019/welcome/\n        http://localhost:4000/docsy-jekyll/2019/welcome/\n        \n        \n        jekyll\n        \n        update"
+					}
+					
+				
+		
+				
+					,
+					
+					"": {
+						"id": "",
+						"title": "Inicio",
+						"categories": "",
+						"url": " /",
+						"content": "Welcome to Docsy Jekyll\n\nThis is a starter template for a docsy jekyll theme.\n\n\n\nPurpose\n\nGitHub pages uses Jekyll natively, so when I make documentation, I typically\nlook for Jekyll templates. Why? Using Jekyll means that I can use markdown,\nand allow for users to easily contribute, and build automatically just by\nway of pushing to a master branch (or general GitHub pages).\nI found Docsy, a beautiful Hugo template, but it requires hugo with GoLang\nwhich doesn’t render natively on GitHub pages. For this reason, I’ve spent\nsome time creating a custom Jekyll template that is (almost) as beautiful,\nand includes all the features that I might want.\n\nFeatures\n\nWhat are these features? You should see the Getting Started\n\nguide for a complete summary. Briefly:\n\n\n  User interaction including consistent permalinks, links to ask questions via GitHub issues, and edit the file on GitHub directly.\n  Search across posts, documentation, and other site pages, with an ability to exclude from search.\n  External Search meaning an ability to link any page tag to trigger an external search.\n  Documentation A documentation collection that was easy to organize on the filesystem, render with nested headings for the user, and refer to in markdown.\n  Pages A separate folder for more traditional pages (e.g, about).\n  Navigation: Control over the main navigation on the left of the page, and automatic generation of table of contents for each page on the right.\n  News A posts feed for news and updates, along with an archive (organized by year).\n  Templates or specifically, “includes” that make it easy to create an alert, documentation link, or other content.\n  Continuous Integration recipes to preview the site\n\n\nFor features, getting started with development, see the Getting Started\n page. Would you like to request a feature or contribute?\nOpen an issue"
+					}
+					
+				
+		
+				
+		
+				
+					,
+					
+					"assets-js-main-js": {
+						"id": "assets-js-main-js",
+						"title": "",
+						"categories": "",
+						"url": " /assets/js/main.js",
+						"content": "(function($) {\n    'use strict';\n    $(function() {\n        $('[data-toggle=\"tooltip\"]').tooltip();\n        $('[data-toggle=\"popover\"]').popover();\n        $('.popover-dismiss').popover({\n            trigger: 'focus'\n        })\n    });\n\n    function bottomPos(element) {\n        return element.offset().top + element.outerHeight();\n    }\n    $(function() {\n        var promo = $(\".js-td-cover\");\n        if (!promo.length) {\n            return\n        }\n        var promoOffset = bottomPos(promo);\n        var navbarOffset = $('.js-navbar-scroll').offset().top;\n        var threshold = Math.ceil($('.js-navbar-scroll').outerHeight());\n        if ((promoOffset - navbarOffset) < threshold) {\n            $('.js-navbar-scroll').addClass('navbar-bg-onscroll');\n        }\n        $(window).on('scroll', function() {\n            var navtop = $('.js-navbar-scroll').offset().top - $(window).scrollTop();\n            var promoOffset = bottomPos($('.js-td-cover'));\n            var navbarOffset = $('.js-navbar-scroll').offset().top;\n            if ((promoOffset - navbarOffset) < threshold) {\n                $('.js-navbar-scroll').addClass('navbar-bg-onscroll');\n            } else {\n                $('.js-navbar-scroll').removeClass('navbar-bg-onscroll');\n                $('.js-navbar-scroll').addClass('navbar-bg-onscroll--fade');\n            }\n        });\n    });\n}(jQuery));\n(function($) {\n    'use strict';\n    var Search = {\n        init: function() {\n            $(document).ready(function() {\n                $(document).on('keypress', '.td-search-input', function(e) {\n                    if (e.keyCode !== 13) {\n                        return\n                    }\n                    var query = $(this).val();\n                    var searchPage = \"http://localhost:4000/docsy-jekyll/search/?q=\" + query;\n                    document.location = searchPage;\n                    return false;\n                });\n            });\n        },\n    };\n    Search.init();\n}(jQuery));"
+					}
+					
+				
+		
+				
+					,
+					
+					"news": {
+						"id": "news",
+						"title": "News",
+						"categories": "",
+						"url": " /news/",
+						"content": "News\n\nSubscribe with RSS to keep up with the latest news.\nFor site changes, see the changelog kept with the code base.\n\n\n\n\n   Two Thousand Nineteen\n   June 28, 2019\n   warning-badgedanger-badge\n   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n   \n   \n\n\n\n   Welcome to MkDocs Jekyll\n   June 28, 2019\n   primary-badgesecondary-badgeinfo-badgesuccess-badge\n   You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.\n\n\n   \n      read more\n   \n   \n\n\nWant to see more? See the News Archive."
+					}
+					
+				
+		
+				
+		
+				
+		
+				
+		
+				
+					,
+					
+					"sitemap-xml": {
+						"id": "sitemap-xml",
+						"title": "",
+						"categories": "",
+						"url": " /sitemap.xml",
+						"content": "/\n     {{ \"now\" | date: \"%Y-%m-%d\" }}\n     daily\n    \n{% for section in site.data.toc %}\n     {{ site.baseurl }}{{ section.url }}/\n     {{ \"now\" | date: \"%Y-%m-%d\" }}\n     daily\n    \n{% endfor %}"
+					}
+					
+				
+		
+				
+					,
+					
+					"tags": {
+						"id": "tags",
+						"title": "Tags Index",
+						"categories": "",
+						"url": " /tags/",
+						"content": "Tags Index\n{% capture site_tags %}{% for tag in site.tags %}{% if tag %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}{% assign docs_tags = \"\" %}{% for doc in site.docs %}{% assign ttags = doc.tags | join:',' | append:',' %}{% assign docs_tags = docs_tags | append:ttags %}{% endfor %}\n{% assign all_tags = site_tags | append:docs_tags %}{% assign tags_list = all_tags | split:',' | uniq | sort %}\n\n{% for tag in tags_list %}{% if tag %}{{ tag }}\n\n    {% for post in site.tags[tag] %}\n    {{- post.title -}}\n     {{- post.date | date: \"%B %d, %Y\" -}}\n{%- endfor -%}\n{% for doc in site.docs %}{% if doc.tags contains tag %}\n\n    {{ doc.title }}\n         {{- doc.date | date: \"%B %d, %Y\" -}}\n    {% endif %}{% endfor %}\n{% endif %}{%- endfor -%}"
+					}
+					
+				
+		
+				
+					,
+					
+					"assets-css-style-css": {
+						"id": "assets-css-style-css",
+						"title": "",
+						"categories": "",
+						"url": " /assets/css/style.css",
+						"content": "@import \"jekyll-theme-primer\";"
+					}
+					
+				
+		
+	};
+</script>
+<script src="/docsy-jekyll/assets/js/lunr.min.js"></script>
+<script src="/docsy-jekyll/assets/js/search.js"></script>
+
+<script>
+var headers = ["h1", "h2", "h3", "h4"]
+var colors = ["red", "orange", "green", "blue"]
+
+$.each(headers, function(i, header){
+    var color = colors[i];
+    $(header).each(function () {
+        var href=$(this).attr("id");
+        $(this).append('<a class="headerlink" style="color:' + color + '" href="#' + href + '" title="Permanent link">¶</a>')
+    });
+})
+</script>
+
+
+
+	
+              
+           </div>
+          </main>
+        </div>
+      </div>
+      <footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+</div>
+<div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+<ul class="list-inline mb-0">  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="" aria-label="GitHub" data-original-title="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/utfpr-gp-tsi/sm-semec">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+</ul>
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+  <small class="text-white">© 2020 Dinosaur Avocado All Rights Reserved</small>
+  
+  <p class="mt-2"><a href="/about/">About Docsy</a></p>	
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="/docsy-jekyll/assets/js/main.js"></script>
+
+  </body>
+</html>
