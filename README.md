@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
 </a>
 
-![/assets/img/deploy-laravel-aplicattion.png]
+![https://raw.githubusercontent.com/TaisHryssai/docsy-jekyll/master/assets/img/deploy-laravel-aplicattion.png](https://raw.githubusercontent.com/TaisHryssai/docsy-jekyll/master/assets/img/deploy-laravel-aplicattion.png)
 
 This is a [starter template](https://vsoch.github.com/docsy-jekyll/) for a Docsy jekyll theme, based
 on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. This version is intended for
