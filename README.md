@@ -1,22 +1,5 @@
-# Docsy Jekyll Theme
-
-[![CircleCI](https://circleci.com/gh/vsoch/docsy-jekyll/tree/master.svg?style=svg)](https://circleci.com/gh/vsoch/docsy-jekyll/tree/master)
-<a href="https://jekyll-themes.com/docsy-jekyll/">
-    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
 
 <img src="assets/img/deploy-laravel-aplicattion.png" alt="Deploy">
-
-This is a [starter template](https://vsoch.github.com/docsy-jekyll/) for a Docsy jekyll theme, based
-on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. This version is intended for
-native deployment on GitHub pages. The original [Apache License](https://github.com/vsoch/docsy-jekyll/blob/master/LICENSE) is included.
-
-## Changes
-
-The site is intended for purely documentation, so while the front page banner
-is useful for business or similar, this author (@vsoch) preferred to have
-the main site page go directly to the Documentation view. Posts
-are still provided via a feed.
 
 ## Usage
 
@@ -25,8 +8,7 @@ are still provided via a feed.
 You can clone the repository right to where you want to host the docs:
 
 ```bash
-git clone https://github.com/vsoch/docsy-jekyll.git docs
-cd docs
+git clone https://github.com/TaisHryssai/tutorials.git
 ```
 
 ### 2. Customize
@@ -92,7 +74,7 @@ Once your docker-compose to download the base container and bring up the server:
 docker-compose up -d
 ```
 
-You can then open your browser to [http://localhost:4000](http://localhost:4000)
+You can then open your browser to [http://localhost:4000/docsy-jekyll](http://localhost:4000/docsy-jekyll)
 to see the server running.
 
 > Node : changes `baseurl: ""` in _config.yml  when you are running in local and prod according to the requirement.
