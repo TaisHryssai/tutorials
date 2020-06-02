@@ -1,5 +1,5 @@
 ### Access tutorial page through github pages
-[https://taishryssai.github.io/tutorials/](https://taishryssai.github.io/)
+[https://taishryssai.github.io/tutorials/](https://taishryssai.github.io/tutorials/)
 
 
 <img src="assets/img/deploy-laravel-aplicattion.png" alt="Deploy">
@@ -77,7 +77,7 @@ Once your docker-compose to download the base container and bring up the server:
 docker-compose up -d
 ```
 
-You can then open your browser to [http://localhost:4000/](http://localhost:4000/)
+You can then open your browser to [http://localhost:4000/tutorials/](http://localhost:4000/tutorials/)
 to see the server running.
 
 > Node : changes `baseurl: ""` in _config.yml  when you are running in local and prod according to the requirement.
