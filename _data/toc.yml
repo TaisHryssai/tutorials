@@ -5,7 +5,7 @@
       children:
         - title: Example of deploy.php
           url: "docs/tutorials/deploy-laravel/example-file-deploy"
-    - title: "Degugbar"
-      url: "docs/extras"
+    - title: "Debugbar"
+      url: "docs/tutorials/debugbar/tutorial-debugbar"
     - title: "Email"
-      url: "docs/extras"
+      url: "docs/tutorials/email/tutorial-email"

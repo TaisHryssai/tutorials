@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Inicio
+title: Page for tutorials
 permalink: /
 ---
 
@@ -13,6 +13,6 @@ permalink: /
 
 * [Deploy a laravel 7.x application using deployer and docker](docs/tutorials/deploy-laravel/deploy-aplicattion-laravel)
 
-* [Debugbar](docs/extras)
+* [Debugbar](docs/tutorials/debugbar/tutorial-debugbar)
 
-* [Email](docs/extras)
+* [Email](docs/tutorials/email/tutorial-email)

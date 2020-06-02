@@ -10,7 +10,7 @@ set('application', 'sm-semec');
 ````
 2. Add application repository found on github:
 ````php
-set('repository', 'git@github.com:TaisHryssai/sm-semec.git');
+set('repository', 'git@github.com:utfpr-gp-tsi/sm-semec.git');
 ````
 3. Allocate TTY to the git clone command, this allows you to enter a password for keys:
 ````php
